@@ -1,0 +1,18 @@
+.object-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        background-color: white;
+        padding: 1.5em 1em;
+    }
+    .line-w{
+        border: 0 solid #333;
+        border-bottom-width: .1em;
+        width: full;
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "type": "object",
+    "properties": {
+        "first_name": {
+            "type": "string",
+            "title": "Nome"
+        },
+        "last_name": {
+            "type": "string",
+            "title": "Sobrenome"
+        },
+        "birthday": {
+            "type": "string",
+            "format": "date",
+            "title": "Data de nascimento"
+        },
+        "address": {
+            "type": "object",
+            "properties": {
+                "street_address": {
+                    "type": "string",
+                    "title": "Rua"
+                },
+                "address_number": {
+                    "type": "string",
+                    "title": "CEP"
+                },
+                "city": {
+                    "type": "string",
+                    "title": "Cidade"
+                },
+                "state": {
+                    "type": "string",
+                    "title": "UF"
+                },
+                "country": {
+                    "type": "string",
+                    "title": "País"
+                }
+            }
+        }
+    }
+}
