@@ -1,5 +1,5 @@
 # Getting Started with Create React App
-You can use the [live-demo](blissful-beaver-6dfc2e.netlify.app) of this app, [here][blissful-beaver-6dfc2e.netlify.app]
+You can use the [live-demo](blissful-beaver-6dfc2e.netlify.app) of this app, [here](blissful-beaver-6dfc2e.netlify.app)
 
 
 ### `npm start`
