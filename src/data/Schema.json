@@ -1,0 +1,68 @@
+{
+  "$id": "schema",
+  "type": "object",
+  "title": "Shiro Test Schema",
+  "properties": {
+      "name": {
+          "title": "Nome",
+          "type": "string"
+      },
+      "address": {
+          "title": "Email",
+          "type": "string"
+      },
+      "active": {
+          "title": "Ativo",
+          "description": "Alguma descrição",
+          "type": "boolean"
+      },
+      "list": {
+          "type": "array",
+          "title":"list",
+          "items": {
+              "type": "string"
+          },
+          "maxItems": 3,
+          "uniqueItems": true
+      },
+      "more": {
+          "type": "object",
+          "properties": {
+              "someOption": {
+                  "type": "string",
+                  "enum": [
+                      "A",
+                      "B",
+                      "C",
+                      null
+                  ]
+              },
+              "identifier": {
+                  "type": "integer"
+              },
+              "objectList": {
+                  "type": "array",
+                  "items": {
+                      "type": "object",
+                      "properties": {
+                          "status": {
+                              "type": "boolean",
+                              "default": true
+                          },
+                          "label": {
+                              "type": "string"
+                          }
+                      },
+                      "required": [
+                          "status"
+                      ]
+                  }
+              }
+          },
+          "additionalProperties": false
+      }
+  },
+  "required": [
+      "name"
+  ]
+}
